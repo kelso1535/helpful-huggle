@@ -18,39 +18,46 @@ const Index = () => {
         <main className="flex-1 flex">
           <div className="flex-1 p-6">
             <div className="flex flex-col items-center justify-center h-full gap-8">
-              <Carousel className="w-full max-w-3xl">
+              <Carousel className="w-full max-w-4xl">
                 <CarouselContent>
                   <CarouselItem>
                     <img 
-                      src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-                      alt="Computer System" 
-                      className="w-full h-64 object-cover rounded-lg"
+                      src="/lovable-uploads/b1f0b691-37c9-40c1-b5f5-725cedb0a02d.png"
+                      alt="MDT Main Interface" 
+                      className="w-full h-[400px] object-contain rounded-lg bg-black/50"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img 
-                      src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
-                      alt="System Interface" 
-                      className="w-full h-64 object-cover rounded-lg"
+                      src="/lovable-uploads/2ef0ff2c-b267-420f-b3f3-f2aa3634a5b5.png"
+                      alt="MDT Supervisor View" 
+                      className="w-full h-[400px] object-contain rounded-lg bg-black/50"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img 
-                      src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
-                      alt="Police Computer" 
-                      className="w-full h-64 object-cover rounded-lg"
+                      src="/lovable-uploads/229632a8-09af-4dd2-9fe9-0c45e6899d41.png"
+                      alt="Criminal History" 
+                      className="w-full h-[400px] object-contain rounded-lg bg-black/50"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img 
-                      src="/lovable-uploads/3df86195-dc23-42ad-8b44-832e2d543f06.png" 
-                      alt="Victoria Police" 
-                      className="h-32 opacity-30"
+                      src="/lovable-uploads/66a4e067-9738-42e6-a0cf-30e0b34e2d7c.png"
+                      alt="Person Search Results" 
+                      className="w-full h-[400px] object-contain rounded-lg bg-black/50"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img 
+                      src="/lovable-uploads/4bf6a251-c16e-496f-bf71-4fae02caee10.png"
+                      alt="Law Enforcement Program" 
+                      className="w-full h-[400px] object-contain rounded-lg bg-black/50"
                     />
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="bg-white/10 hover:bg-white/20 border-0" />
+                <CarouselNext className="bg-white/10 hover:bg-white/20 border-0" />
               </Carousel>
             </div>
           </div>
