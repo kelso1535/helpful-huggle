@@ -1,4 +1,4 @@
-import { LogOut, Shield, Flag, Database, UserCheck, AlertTriangle, History, Search, Users } from 'lucide-react';
+import { LogOut, Shield, Flag, Database, History, Search, Users } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export const Sidebar = () => {
