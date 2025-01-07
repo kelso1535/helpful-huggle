@@ -27,7 +27,10 @@ const LawEnforcement = () => {
           <button className="nav-button">
             PIN
           </button>
-          <button className="nav-button">
+          <button 
+            className="nav-button"
+            onClick={() => navigate('/criminal-history')}
+          >
             CRIM HIST
           </button>
           <button className="nav-button">
