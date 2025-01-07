@@ -1,4 +1,4 @@
-import { LogOut, Shield, Flag, Database, History, Search, Users } from 'lucide-react';
+import { LogIn, LogOut, Shield, Flag, Database, AlertTriangle, UserCheck, Settings } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export const Sidebar = () => {
@@ -7,33 +7,28 @@ export const Sidebar = () => {
   return (
     <div className="w-64 p-4 border-r border-border/50 space-y-3">
       <button className="nav-button" onClick={() => navigate('/main')}>
-        <Database className="w-4 h-4" />
-        Main Interface
+        <LogIn className="w-4 h-4" />
+        Login to MDT
       </button>
       
-      <button className="nav-button" onClick={() => navigate('/supervisor')}>
-        <Users className="w-4 h-4" />
-        Supervisor View
+      <button className="nav-button">
+        <UserCheck className="w-4 h-4" />
+        Login with Auto Call Sign
       </button>
       
-      <button className="nav-button" onClick={() => navigate('/criminal-history')}>
-        <History className="w-4 h-4" />
-        Criminal History
-      </button>
-      
-      <button className="nav-button" onClick={() => navigate('/person-search')}>
-        <Search className="w-4 h-4" />
-        Person Search
-      </button>
-      
-      <button className="nav-button" onClick={() => navigate('/law-enforcement')}>
-        <Shield className="w-4 h-4" />
-        Law Enforcement Program
+      <button className="nav-button">
+        <Settings className="w-4 h-4" />
+        Change Status
       </button>
       
       <button className="nav-button text-destructive">
-        <Shield className="w-4 h-4" />
+        <AlertTriangle className="w-4 h-4" />
         [- DURESS -]
+      </button>
+      
+      <button className="nav-button" onClick={() => navigate('/law-enforcement')}>
+        <Database className="w-4 h-4" />
+        Law Enforcement Assessment Program (LEAP)
       </button>
       
       <button className="nav-button">
