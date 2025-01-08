@@ -45,7 +45,10 @@ const LawEnforcement = () => {
           <button className="nav-button">
             FIN. RECORDS
           </button>
-          <button className="nav-button">
+          <button 
+            className="nav-button"
+            onClick={() => navigate('/supervisor')}
+          >
             SUPERVISOR
           </button>
           <button className="nav-button">
