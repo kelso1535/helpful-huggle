@@ -3,18 +3,27 @@ import { Sidebar } from "@/components/Sidebar";
 import { InfoPanel } from "@/components/InfoPanel";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const PersonSearch = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <div className="flex flex-1">
         <Sidebar />
         <div className="w-64 p-4 border-r border-border/50 space-y-3 bg-background">
-          <button className="nav-button bg-red-500/20 text-red-400">
+          <button 
+            className="nav-button bg-red-500/20 text-red-400"
+            onClick={() => navigate('/person-search')}
+          >
             SEARCH PEOPLE
           </button>
-          <button className="nav-button">
+          <button 
+            className="nav-button"
+            onClick={() => navigate('/search-vehicle')}
+          >
             SEARCH VEHICLE
           </button>
           <button className="nav-button">
@@ -23,13 +32,19 @@ const PersonSearch = () => {
           <button className="nav-button">
             PIN
           </button>
-          <button className="nav-button">
+          <button 
+            className="nav-button"
+            onClick={() => navigate('/criminal-history')}
+          >
             CRIM HIST
           </button>
           <button className="nav-button">
             REPORTS
           </button>
-          <button className="nav-button">
+          <button 
+            className="nav-button"
+            onClick={() => navigate('/search-serial')}
+          >
             SERIALS
           </button>
           <button className="nav-button">
@@ -38,7 +53,10 @@ const PersonSearch = () => {
           <button className="nav-button">
             FIN. RECORDS
           </button>
-          <button className="nav-button">
+          <button 
+            className="nav-button"
+            onClick={() => navigate('/supervisor')}
+          >
             SUPERVISOR
           </button>
           <button className="nav-button">

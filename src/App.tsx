@@ -9,6 +9,8 @@ import SupervisorView from "./pages/SupervisorView";
 import CriminalHistory from "./pages/CriminalHistory";
 import PersonSearch from "./pages/PersonSearch";
 import LawEnforcement from "./pages/LawEnforcement";
+import SearchVehicle from "./pages/SearchVehicle";
+import SearchSerial from "./pages/SearchSerial";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/criminal-history" element={<CriminalHistory />} />
           <Route path="/person-search" element={<PersonSearch />} />
           <Route path="/law-enforcement" element={<LawEnforcement />} />
+          <Route path="/search-vehicle" element={<SearchVehicle />} />
+          <Route path="/search-serial" element={<SearchSerial />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
