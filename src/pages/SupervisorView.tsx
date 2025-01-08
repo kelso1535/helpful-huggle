@@ -1,8 +1,10 @@
 import { Header } from "@/components/Header";
 import { Sidebar } from "@/components/Sidebar";
 import { InfoPanel } from "@/components/InfoPanel";
+import { useNavigate } from "react-router-dom";
 
 const SupervisorView = () => {
+  const navigate = useNavigate();
   const units = [
     { callsign: "CRD 625", badge: "405666", name: "JOHNNY DISTANCE", gprd: "19:09", status: "UNAVAILABLE STATION", location: "Vinsor St & Atlas St, Mission Row" },
     { callsign: "MA 242", badge: "823966", name: "FRANKLIN WEST", gprd: "17:34", status: "UNAVAILABLE BUSY", location: "San Andreas Ave & Palomino Ave, Little Seoul" },
@@ -16,6 +18,53 @@ const SupervisorView = () => {
       <Header />
       <div className="flex flex-1">
         <Sidebar />
+        <div className="w-64 p-4 border-r border-border/50 space-y-3 bg-background">
+          <button 
+            className="nav-button bg-red-500/20 text-red-400"
+            onClick={() => navigate('/person-search')}
+          >
+            SEARCH PEOPLE
+          </button>
+          <button className="nav-button">
+            SEARCH VEHICLE
+          </button>
+          <button className="nav-button">
+            SEARCH HISTORY
+          </button>
+          <button className="nav-button">
+            PIN
+          </button>
+          <button 
+            className="nav-button"
+            onClick={() => navigate('/criminal-history')}
+          >
+            CRIM HIST
+          </button>
+          <button className="nav-button">
+            REPORTS
+          </button>
+          <button className="nav-button">
+            SERIALS
+          </button>
+          <button className="nav-button">
+            ACTIONS
+          </button>
+          <button className="nav-button">
+            FIN. RECORDS
+          </button>
+          <button 
+            className="nav-button"
+            onClick={() => navigate('/supervisor')}
+          >
+            SUPERVISOR
+          </button>
+          <button className="nav-button">
+            WANTED
+          </button>
+          <button className="nav-button">
+            EXIT
+          </button>
+        </div>
         <main className="flex-1 p-6 bg-black">
           <div className="space-y-4">
             <div className="flex justify-between items-center mb-6">
